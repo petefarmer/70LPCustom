@@ -1,4 +1,4 @@
-% '61 SGLP
+% 70 LP Custom
 \version "2.18.0"
 \include "IntroGuitar.ly"
 \include "SectionAGuitarOne.ly"
