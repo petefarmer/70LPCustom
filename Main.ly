@@ -4,6 +4,8 @@
 \include "SectionAGuitarOne.ly"
 \include "SectionAGuitarTwo.ly"
 \include "DummyChordsSectionA.ly"
+\include "SoloChordsOne.ly"
+\include "SoloGuitarOne.ly"
 
 \book {
  \header {
@@ -25,7 +27,7 @@
   \tempo 4 = 100
    \IntroGuitar
    \SectionAGuitarOne
-
+   \SoloGuitarOne
   } % Staff (Guitar)
 
  \new Staff {
@@ -33,9 +35,9 @@
   \clef "treble_8"
   \time 8/8 
   \key d \major
-  \tempo 4 = 100
-%   \IntroGuitar
-%   \SectionAGuitarTwo
+%  \tempo 4 = 100
+   \IntroGuitar
+   \SectionAGuitarTwo
 
   } % Staff (Guitar)
   \new Staff {
@@ -44,6 +46,7 @@
    \key d \major
 %   \tempo 4 = 100
    \DummyChordsSectionA
+   \SoloChordsOne
   }
  >> % StaffGroup
  \layout {
