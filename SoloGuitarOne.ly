@@ -9,5 +9,5 @@ fis4.  \tuplet 3/2 {d16 e16 fis} a  \tuplet 3/2 {d16 e fis} d'16 fis' a' g' fis'
 e'8 cis''4 b'8. cis''16 d''16 cis'' d'' cis'' b'8
 a'4 fis''16 d'' a' e'' d'' a' d'' a' fis'8 e'16 d'
 b8 g'16 fis' e' d' cis' b cis' b' a' g' fis' e' cis' a 
-g fis d8 fis16 g a d'2
+g fis d8 fis16 g a d'2 r16
 }
