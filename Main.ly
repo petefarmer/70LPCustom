@@ -8,6 +8,7 @@
 \include "SoloGuitarOne.ly"
 \include "SoloChordsTwo.ly"
 \include "SoloGuitarTwo.ly"
+\include "SoloGuitarThree.ly"
 
 \book {
  \header {
@@ -31,6 +32,7 @@
    \SectionAGuitarOne
    \SoloGuitarOne
    \SoloGuitarTwo
+   \SoloGuitarThree
   } % Staff (Guitar)
 
  \new Staff {
@@ -51,6 +53,7 @@
    \DummyChordsSectionA
    \SoloChordsOne
    \SoloChordsTwo
+   \SoloChordsOne
   }
  >> % StaffGroup
  \layout {
