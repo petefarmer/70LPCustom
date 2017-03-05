@@ -1,14 +1,20 @@
 % 70 LP Custom
 \version "2.18.0"
 \include "IntroGuitar.ly"
+\include "IntroGuitarTwo.ly"
 \include "SectionAGuitarOne.ly"
+\include "SectionBGuitarOne.ly"
+\include "SectionBGuitarOnePostSolo.ly"
 \include "SectionAGuitarTwo.ly"
+\include "SectionBGuitarTwo.ly"
 \include "DummyChordsSectionA.ly"
+\include "DummyChordsSectionB.ly"
 \include "SoloChordsOne.ly"
 \include "SoloGuitarOne.ly"
 \include "SoloChordsTwo.ly"
 \include "SoloGuitarTwo.ly"
 \include "SoloGuitarThree.ly"
+\include "EightBarRest.ly"
 
 \book {
  \header {
@@ -30,9 +36,12 @@
   \tempo 4 = 100
    \IntroGuitar
    \SectionAGuitarOne
+   \SectionBGuitarOne
    \SoloGuitarOne
    \SoloGuitarTwo
    \SoloGuitarThree
+%   \SectionBGuitarOne
+   \SectionBGuitarOnePostSolo
   } % Staff (Guitar)
 
  \new Staff {
@@ -41,9 +50,13 @@
   \time 8/8 
   \key d \major
   \tempo 4 = 100
-   \IntroGuitar
+   \IntroGuitarTwo
    \SectionAGuitarTwo
-
+   \SectionBGuitarTwo
+   \EightBarRest
+   \EightBarRest
+   \EightBarRest
+%   \SectionBGuitarTwo
   } % Staff (Guitar)
   \new Staff {
    \set Staff.instrumentName = #"chords"
@@ -51,9 +64,11 @@
    \key d \major
 %   \tempo 4 = 100
    \DummyChordsSectionA
+   \DummyChordsSectionB
    \SoloChordsOne
    \SoloChordsTwo
-   \SoloChordsOne
+   \SoloChordsOne % section 3 
+   \DummyChordsSectionB
   }
  >> % StaffGroup
  \layout {
@@ -64,6 +79,7 @@
    }
   }
   \context { \TabStaff \remove Clef_engraver }
+  \context { \Staff \RemoveEmptyStaves }
  }
 \midi {}
 } % score

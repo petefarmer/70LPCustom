@@ -6,5 +6,5 @@ fis4 e16 \grace {d e}d b, a, b, d e fis a d' cis' b
 a b cis' a'4 r4  g'16 fis' g' b'8 
 a'4  g'16 fis' e' d'  e' \grace {cis' d'} cis' b a  d' cis' b a
 g8. fis16 g e fis d e d cis b, a, b, cis e 
-d8. a''8\harmonic ^\markup {\teeny "let ring"} d'''\harmonic fis'''\harmonic cis''16 d'' e'' d'' b''8
+d4 a''8\harmonic ^\markup {\teeny "let ring"} d'''\harmonic fis'''\harmonic cis''16 d'' e'' d'' b''8
 }
