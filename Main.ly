@@ -50,7 +50,7 @@
   \clef "treble_8"
   \time 8/8 
   \key d \major
-  \tempo 4 = 100
+  \tempo 8 = 200
    \IntroGuitar
    \SectionAGuitarOneSimple
    <<
