@@ -1,5 +1,7 @@
 % 70 LP Custom
-\version "2.18.0"
+%\version "2.18.0"
+\version "2.19.0"
+%\include "custom-music-fonts/smufl/definitions.ily"
 \include "IntroGuitar.ly"
 \include "IntroBass.ly"
 \include "IntroOrgan.ly"
@@ -46,6 +48,7 @@
 \new StaffGroup {
  <<
  \new Staff = "main" {
+%  \bravuraOn
   \set Staff.instrumentName = #"Guitar 1" 
   \clef "treble_8"
   \time 8/8 

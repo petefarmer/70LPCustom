@@ -1,4 +1,4 @@
-IntroBass.ly = {
+IntroBass = {
 \clef "bass"
 \key d \major
 \partial 4 r4
