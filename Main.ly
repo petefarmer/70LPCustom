@@ -51,9 +51,9 @@
 %  \bravuraOn
   \set Staff.instrumentName = #"Guitar 1" 
   \clef "treble_8"
-  \time 8/8 
+  \time 4/4 
   \key d \major
-  \tempo 8 = 200
+  \tempo 4 = 100
    \IntroGuitar
    \SectionAGuitarOneSimple
    <<
