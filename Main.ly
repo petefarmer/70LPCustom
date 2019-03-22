@@ -2,6 +2,7 @@
 %\version "2.18.0"
 \version "2.19.0"
 %\include "custom-music-fonts/smufl/definitions.ily"
+\include "definitions_No-Tab.ly"
 \include "IntroGuitar.ly"
 \include "IntroBass.ly"
 \include "IntroOrgan.ly"
@@ -37,7 +38,7 @@
  \header {
   title = "70 LP Custom"
   subtitle = "DRAFT"
-  subsubtitle = "v0.1"
+  subsubtitle = "v0.2"
   composer = "John Jorgenson"
   copyright = \markup { \char ##x00A9 Copyright Jorgensongs 2014 }
  }
@@ -155,7 +156,12 @@
    }
   }
   \context { \TabStaff \remove Clef_engraver }
-  \context { \Staff \RemoveEmptyStaves }
+  \context { 
+    \Staff
+    \override Glissando #'minimum-length = #4
+    \override Glissando #'springs-and-rods = #ly:spanner::set-spacing-rods
+    \RemoveEmptyStaves 
+  }
  }
 \midi {}
 } % score
